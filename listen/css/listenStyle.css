@@ -1,0 +1,354 @@
+/* common */
+body {
+  overflow-x: hidden;
+}
+.inner {
+  width: 1220px;
+  margin: auto;
+}
+/* header */
+header {
+  padding: 1rem;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 5px 10px rgba(35, 34, 37, 0.11);
+  display: flex;
+  justify-content: space-around;
+  gap: 0;
+  margin-bottom: 5rem;
+}
+.header_logo {
+  text-align: center;
+  height: 100%;
+  width: 170px;
+  position: relative;
+}
+.header_logo img {
+  width: 170px;
+  position: absolute;
+  transform: translateX(20%);
+  height: 50px;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+}
+.gnb li a {
+  padding: 1.5rem;
+  font-size: 20px;
+  color: var(--font-color);
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+/* hover */
+.gnb li a,
+.target {
+  transition: 0.3s;
+}
+.target {
+  top: 50px;
+  height: 10px;
+  left: 100px;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 5px solid var(--hover-color);
+}
+.gnb li a:hover {
+  color: var(--hover-color);
+}
+.tab_inner {
+  margin-top: 2rem;
+}
+/* tab_menu */
+.tab {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.tab_menu {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  transform: translateY(12%);
+}
+.tab .tab_menu li {
+  border: 1px solid #898989;
+  cursor: pointer;
+  width: 140px;
+  height: 130px;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.tab .tab_menu li.up {
+  transform: translateY(-12%);
+}
+
+.tab .tab_menu li:hover {
+  transform: translateY(-12%);
+}
+.tab .tab_menu li a {
+  font-size: var(--basic-size);
+  color: var(--font-color);
+}
+/* content */
+.tab_inner {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduce_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.introduce_text h2 {
+  color: var(--font-color);
+}
+.introduce_text h2 > b {
+  color: var(--hover-color);
+}
+
+.introduce_text p {
+  font-size: var(--basic-size);
+  width: 70%;
+  line-height: 2;
+  text-align: justify;
+  margin-top: 1rem;
+  color: var(--font-color2);
+}
+
+/* main */
+.main_content {
+  position: relative;
+}
+
+.content_tab h6 {
+  font-size: var(--middle-size);
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.content_tab li {
+  width: 100%;
+}
+.content_tab li a {
+  width: 400px;
+  border-radius: 15px 0 0 15px;
+  display: block;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  color: var(--font-color);
+  font-size: var(--basic-size);
+  transition: 0.3s;
+}
+.content_tab li a:hover {
+  transform: translateX(-15%);
+}
+.content_tab li a.active {
+  background-color: var(--font-color);
+  color: white;
+  transform: translateX(-15%);
+}
+
+.main_content_text {
+  text-align: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px dashed #ddd;
+  margin-bottom: 2rem;
+}
+.main_content_text h3 {
+  position: relative;
+  margin: 3.5rem 0;
+  font-size: var(--mob-size);
+  color: var(--btn-color);
+  letter-spacing: 3px;
+}
+.main_content_text h3::before {
+  content: "";
+  position: absolute;
+  background: url(../image/quote1.png);
+  width: 60px;
+  height: 60px;
+  top: -90%;
+  left: 30%;
+}
+.main_content_text h3::after {
+  content: "";
+  position: absolute;
+  background: url(../image/quote2.png);
+  width: 60px;
+  height: 60px;
+  top: -50%;
+  right: 31%;
+}
+.main_content_text p {
+  font-size: var(--basic-size);
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin: 2rem;
+  color: var(--font-color2);
+}
+
+.intro_music {
+  display: none;
+}
+/* information */
+.information_inner h2 {
+  text-align: center;
+  margin: 3rem 0;
+  color: var(--font-color);
+}
+.information_list {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  padding: 1rem;
+}
+.information_content {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem;
+}
+.information_list li a {
+  padding: 2rem;
+  font-size: var(--middle-size);
+  color: var(--font-color);
+}
+.inform_img {
+  position: relative;
+}
+.inform_img img {
+  width: 318px;
+  height: 369px;
+  position: relative;
+}
+.inform_img::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  height: 369px;
+  transform: translate(-10%, 10%);
+  background-color: var(--bg-color);
+}
+
+h4 {
+  font-size: var(--middle-size);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  font-size: var(--middle-size);
+}
+tr {
+  margin: 1rem 0;
+  display: flex;
+}
+th {
+  display: inline-block;
+  margin-right: 1rem;
+}
+td {
+  color: var(--font-color2);
+}
+.lighter {
+  font-weight: 500;
+  color: var(--font-color2);
+}
+/* footer */
+footer {
+  margin-top: 2rem;
+}
+.footer_down {
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.footer_down .youtube a {
+  position: absolute;
+  right: 10%;
+  color: white;
+  text-align: end;
+}
+/* all tab */
+.orche_inner,
+.musical_inner,
+.korea_inner {
+  display: none;
+}
+/* tab */
+.main_content_inner {
+  position: relative;
+  height: 2450px;
+}
+.content_inner {
+  position: absolute;
+  height: auto;
+}
+.content_tab {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 150px;
+  z-index: 2;
+  border-radius: 15px 0 0 15px;
+  left: 100%;
+  transform: translateX(180%);
+  top: 0;
+  gap: 5px;
+}
+.main_content_tab {
+  position: relative;
+  height: 1800px;
+}
+.main_content_elemental {
+  position: absolute;
+}
+.whitsle_elemental,
+.turandot_elemental {
+  display: none;
+}
+/* tab 2 */
+.listen_content {
+  display: none;
+}
+.text_content {
+  position: relative;
+  width: 100%;
+  height: 476px;
+}
+.list_content {
+  position: absolute;
+  top: 0;
+}
+.list_content p {
+  font-size: var(--basic-size);
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-bottom: 2rem;
+  color: var(--font-color2);
+}
+/* tab2 */
+.four_elemental,
+.destiny_elemental {
+  display: none;
+}
+/* musical tab */
+.myeongdong_elemental,
+.wi_elemental {
+  display: none;
+}
+/* korea tab */
+.sujae_elemental,
+.chung_elemental {
+  display: none;
+}

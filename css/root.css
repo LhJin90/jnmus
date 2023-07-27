@@ -1,0 +1,21 @@
+:root {
+  /* size */
+  /* basic - 15px */
+  --small-size: 0.8rem;
+  --mobBasic-size: 1rem;
+  --basic-size: 1.2rem;
+  --middle-size: 1.5rem;
+  --sub-size: 2rem;
+  --mob-size: 1.8rem;
+  --title-size: 3.1rem;
+  /* color */
+  --bg-color: #e3e1e5;
+  --default-color: #cbbeef;
+  --title-color: #483a9a;
+  --hover-color: #a74cb6;
+  --btn-color: #5a3b5f;
+  --font-color: #262427;
+  --font-color2: #a3a3a3;
+  /* weight */
+  --title-weight: 800;
+}
